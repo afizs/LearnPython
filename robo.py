@@ -10,10 +10,15 @@ class Robot:
         else:
             print("Hello, I am Robo without a name")
 
+    def set_name(self, name): # Data Encapsulation 
+        self.name = name
+
+    def get_name(self): # Data Encapsulation
+        return self.name
+
 if __name__ =="__main__":
-    x = Robot()
+    x = Robot('arjunaa')
     y = Robot()
-    print(x==y)
-    y1 = y
-    print(y==y1)
-    print(help)
+    print(x.say_hello())
+    print(y.say_hello())
+    
